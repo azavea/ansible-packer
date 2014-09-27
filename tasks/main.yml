@@ -1,0 +1,9 @@
+---
+- name: Download Packer
+  get_url: url=https://dl.bintray.com/mitchellh/packer/packer_{{ packer_version }}_linux_amd64.zip
+           dest=/usr/local/src/packer_{{ packer_version }}_linux_amd64.zip
+
+- name: Extract and install Packer
+  unarchive: src=/usr/local/src/packer_{{ packer_version }}_linux_amd64.zip
+             dest=/usr/local/bin
+             copy=no
