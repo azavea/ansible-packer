@@ -1,6 +1,6 @@
 ---
 - name: Download Packer
-  get_url: url=https://dl.bintray.com/mitchellh/packer/packer_{{ packer_version }}_linux_amd64.zip
+  get_url: url=https://releases.hashicorp.com/packer/{{ packer_version }}/packer_{{ packer_version }}_linux_amd64.zip
            dest=/usr/local/src/packer_{{ packer_version }}_linux_amd64.zip
 
 - name: Extract and install Packer
